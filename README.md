@@ -59,18 +59,18 @@ Entre na pasta criada com o comando <code>cd members-dev-pp</code>
 
 Depois disso, podemos pedir ao nosso novo aplicativo que inicie somente com o comando <code>ng serve</code>:
 
-** NG Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **
-Date: 2018-02-20T00:44:34.860Z
-Hash: c7175b6d8044cd2f5efa
-Time: 18274ms
-chunk {inline} inline.bundle.js (inline) 3.85 kB [entry] [rendered]
-chunk {main} main.bundle.js (main) 17.9 kB [initial] [rendered]
-chunk {polyfills} polyfills.bundle.js (polyfills) 549 kB [initial] [rendered]
-chunk {styles} styles.bundle.js (styles) 41.5 kB [initial] [rendered]
-chunk {vendor} vendor.bundle.js (vendor) 7.42 MB [initial] [rendered]
-
-webpack: Compiled successfully.
-
-Se acessarmos em nosso navegador o link http://localhost:4200/, a aplicação será exibida como ilustrado aqui:
+<p>** NG Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **</p>
+<p>Date: 2018-02-20T00:44:34.860Z</p>
+<p>Hash: c7175b6d8044cd2f5efa</p>
+<p>Time: 18274ms</p>
+<p>chunk {inline} inline.bundle.js (inline) 3.85 kB [entry] [rendered]</p>
+<p>chunk {main} main.bundle.js (main) 17.9 kB [initial] [rendered]</p>
+<p>chunk {polyfills} polyfills.bundle.js (polyfills) 549 kB [initial] [rendered]</p>
+<p>chunk {styles} styles.bundle.js (styles) 41.5 kB [initial] [rendered]</p>
+<p>chunk {vendor} vendor.bundle.js (vendor) 7.42 MB [initial] [rendered]</p>
+<br />
+<p>webpack: Compiled successfully.</p>
+<br />
+<p>Se acessarmos em nosso navegador o link http://localhost:4200/, a aplicação será exibida como ilustrado aqui:</p>
 
 ![Aplicação sendo Exibida](/images/primeiro-ng-serve.PNG "Primeiro ng serve")
