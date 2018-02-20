@@ -636,6 +636,32 @@ Vamos ver como funciona agora:
 
 ![Resultado com Listagem Dinâmica](/images/listagem-dinamica.png "Resultado da Listagem de Membros do Web App")
 
+<p>Durante a implementação acabei retirando do arquivo a div com a class row de <code>card-list.component.html</code> e a coloquei agora novamente, o arquivo ficou assim:
+
+```
+<div class="container-fluid text-center pb-5">
+  <div class="row">  
+    <app-card class="col-4" *ngFor="let card of cards" [card]="card"></app-card>
+  </div>
+</div>
+```
+
+<p>E o resultado agora é esse:</p>
+
+![Resultado com Listagem Dinâmica e com Linhas](/images/div-class-row.png "Resultado da Listagem de Membros do Web App em Linhas")
+
+<p>Não ta legal ainda né? É por isso que existe a class card que vai na DIV pai do nosso card</p>
+
+```
+<div class="card">
+[...]
+</div>
+```
+
+<p>Agora veja o resultado:</p>
+
+![Listagem dos Cards de Membros](/images/listagem-cards.png "Resultado da Listagem dos Cards de Membros do DevPP")
+
 
 
 
