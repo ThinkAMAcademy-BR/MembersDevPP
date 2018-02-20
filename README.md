@@ -186,3 +186,34 @@ success Saved 1 new dependency.
 yarn add node-sass@4.7.2 --dev
 ✨  Done in 5.78s.
 ```
+
+<p>Eu também quero usar o Twitter Bootstrap em nosso projeto, então vamos rodar <code>yarn add bootstrap@v4.0.0-beta.2</code> e editar o nosso <code>styles.scss</code> para incluir isso:</p>
+
+```
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/scss/bootstrap";
+ 
+body {
+  padding-top: 5rem;
+}
+```
+
+<p>Precisamos editar <code>index.html</code> para tornar a nossa página responsiva vamos alterar o meta do nosso HTML para isso:</p>
+
+<code><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"></code>
+
+<p>E agora podemos substituir <code>app.component.html</code> por isso:</p>
+
+```
+<!-- Fixed navbar -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#">Membros do DevPP</a>
+</nav>
+<div class="container-fluid text-center pb-5">
+  <div style="text-align:center">
+    <h1>
+      Bem-vindo ao {{title}}!
+    </h1>
+  </div>
+</div>
+```
