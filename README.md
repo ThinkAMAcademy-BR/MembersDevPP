@@ -73,4 +73,4 @@ webpack: Compiled successfully.
 
 Se acessarmos em nosso navegador o link http://localhost:4200/, a aplicação será exibida como ilustrado aqui:
 
-![Aplicação sendo Exibida](/images/primeiro-ng-serve.png "Primeiro ng serve")
+![Aplicação sendo Exibida](/images/primeiro-ng-serve.PNG "Primeiro ng serve")
