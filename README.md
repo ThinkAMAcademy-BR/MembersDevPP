@@ -405,7 +405,7 @@ export class AppComponent {
     { "name": "Andressa Gouveia", "location": "Presidente Prudente", "joinedGroupOn": "12/11/2017", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/243713570/" },
     { "name": "André Hungaro", "location": "Vancouver, BC", "joinedGroupOn": "02/13/2018", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/198473852/" },
     { "name": "André Ozawa", "location": "Presidente Prudente", "joinedGroupOn": "02/15/2018", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/248276095/" },
-    { "name": "Augusto César", "location": "MarÃ­lia", "joinedGroupOn": "12/14/2017", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/243902464/" },
+    { "name": "Augusto César", "location": "Marília", "joinedGroupOn": "12/14/2017", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/243902464/" },
     { "name": "Breno S. Beletato", "location": "Presidente Prudente", "joinedGroupOn": "02/15/2018", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/248281509/" },
     { "name": "Bruno Vinicius Manfrão", "location": "Presidente Prudente", "joinedGroupOn": "01/23/2018", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/246669036/" },
     { "name": "Caio Russi", "location": "Presidente Prudente", "joinedGroupOn": "12/11/2017", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/243696787/" },
@@ -424,21 +424,21 @@ export class AppComponent {
     { "name": "Emanuel Henrique", "location": "Presidente Prudente", "joinedGroupOn": "12/20/2017", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/244288714/" },
     { "name": "Emanuel Herique Magri da Silva", "location": "Presidente Prudente", "joinedGroupOn": "01/23/2018", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/246667174/" },
     { "name": "Emerson Miyasaki", "location": "Presidente Prudente", "joinedGroupOn": "01/24/2018", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/246785916/" },
-    { "name": "Enrique Prieto", "location": "SÃ£o Paulo", "joinedGroupOn": "12/14/2017", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/219852879/" },
+    { "name": "Enrique Prieto", "location": "São Paulo", "joinedGroupOn": "12/14/2017", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/219852879/" },
     { "name": "Felipe", "location": "Presidente Prudente", "joinedGroupOn": "12/23/2017", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/244249934/" },
     { "name": "Felipe Albuquerque de Almeida", "location": "Presidente Prudente", "joinedGroupOn": "12/11/2017", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/243678940/" },
     { "name": "Felipe Benincasa", "location": "Presidente Prudente", "joinedGroupOn": "01/22/2018", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/246629819/" },
     { "name": "Felipe Blini", "location": "Presidente Prudente", "joinedGroupOn": "07/31/2017", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/171930182/" },
     { "name": "Felipe Vicente", "location": "Presidente Prudente", "joinedGroupOn": "12/11/2017", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/243698808/" },
-    { "name": "Fernanda de Almeida", "location": "Santo AnastÃ¡cio", "joinedGroupOn": "01/23/2018", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/246699690/" },
+    { "name": "Fernanda de Almeida", "location": "Santo Anastácio", "joinedGroupOn": "01/23/2018", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/246699690/" },
     { "name": "Fernando Cassinelli", "location": "Presidente Prudente", "joinedGroupOn": "02/02/2018", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/247390200/" },
     { "name": "Fernando Modafaris de Araujo", "location": "Presidente Prudente", "joinedGroupOn": "01/25/2018", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/246821980/" },
     { "name": "Fernando Vicente", "location": "Presidente Prudente", "joinedGroupOn": "01/24/2018", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/246788344/" },
     { "name": "Fábio Costa", "location": "Presidente Prudente", "joinedGroupOn": "08/01/2017", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/198700472/" },
     { "name": "Fábio T. Perez", "location": "Presidente Prudente", "joinedGroupOn": "01/23/2018", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/246716895/" },
-    { "name": "Gabriel Branquinho", "location": "SÃ£o Paulo", "joinedGroupOn": "02/13/2018", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/247899396/" },
+    { "name": "Gabriel Branquinho", "location": "São Paulo", "joinedGroupOn": "02/13/2018", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/247899396/" },
     { "name": "Gabriel Fredo", "location": "Presidente Prudente", "joinedGroupOn": "08/03/2017", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/233231503/" },
-    { "name": "Gabriel Furlan", "location": "SÃ£o Paulo", "joinedGroupOn": "01/25/2018", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/221828194/" },
+    { "name": "Gabriel Furlan", "location": "São Paulo", "joinedGroupOn": "01/25/2018", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/221828194/" },
     { "name": "Gabriel Majaron", "location": "Presidente Prudente", "joinedGroupOn": "12/12/2017", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/243757384/" },
     { "name": "Geiziane", "location": "Presidente Prudente", "joinedGroupOn": "01/31/2018", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/247277047/" },
     { "name": "Guilherme Alexandre", "location": "Presidente Prudente", "joinedGroupOn": "08/14/2017", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/234058889/" },
@@ -465,13 +465,13 @@ export class AppComponent {
     { "name": "Junior CS", "location": "Presidente Prudente", "joinedGroupOn": "01/28/2018", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/181996192/" },
     { "name": "Junior Rota", "location": "Presidente Prudente", "joinedGroupOn": "02/06/2018", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/185111685/" },
     { "name": "Jéssica Takazono", "location": "Presidente Prudente", "joinedGroupOn": "11/23/2017", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/217943994/" },
-    { "name": "Kako Fernandes", "location": "SÃ£o Paulo", "joinedGroupOn": "12/11/2017", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/65875232/" },
-    { "name": "Kleiton Rogério", "location": "SÃ£o Paulo", "joinedGroupOn": "12/14/2017", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/243932068/" },
+    { "name": "Kako Fernandes", "location": "São Paulo", "joinedGroupOn": "12/11/2017", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/65875232/" },
+    { "name": "Kleiton Rogério", "location": "São Paulo", "joinedGroupOn": "12/14/2017", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/243932068/" },
     { "name": "Leandro Blazão", "location": "Londrina", "joinedGroupOn": "09/21/2017", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/183579862/" },
     { "name": "Leandro Mariano Barbosa", "location": "Presidente Prudente", "joinedGroupOn": "01/29/2018", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/247104663/" },
     { "name": "Leonardo Henrique", "location": "Presidente Prudente", "joinedGroupOn": "08/07/2017", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/233493620/" },
     { "name": "Leonardo Lucas Ferreira", "location": "Presidente Prudente", "joinedGroupOn": "01/23/2018", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/246666909/" },
-    { "name": "Leonardo Ochoa Lopes", "location": "SÃ£o Paulo", "joinedGroupOn": "01/30/2018", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/239620352/" },
+    { "name": "Leonardo Ochoa Lopes", "location": "São Paulo", "joinedGroupOn": "01/30/2018", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/239620352/" },
     { "name": "Leonardo Vox", "location": "Presidente Prudente", "joinedGroupOn": "12/12/2017", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/243754836/" },
     { "name": "Letícia Sene", "location": "Presidente Prudente", "joinedGroupOn": "02/08/2018", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/247776681/" },
     { "name": "Lucas", "location": "Santo AnastÃ¡cio", "joinedGroupOn": "02/02/2018", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/247363850/" },
@@ -522,13 +522,13 @@ export class AppComponent {
     { "name": "Sino Pessoal", "location": "Presidente Prudente", "joinedGroupOn": "12/14/2017", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/243917263/" },
     { "name": "Sinomar Calmona", "location": "Presidente Prudente", "joinedGroupOn": "12/14/2017", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/243916963/" },
     { "name": "Stéfano H", "location": "Presidente Prudente", "joinedGroupOn": "12/11/2017", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/243689849/" },
-    { "name": "Thiago Calistro", "location": "SÃ£o Paulo", "joinedGroupOn": "12/14/2017", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/130219502/" },
+    { "name": "Thiago Calistro", "location": "São Paulo", "joinedGroupOn": "12/14/2017", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/130219502/" },
     { "name": "Thiago De Carlo Gonçalves", "location": "Presidente Prudente", "joinedGroupOn": "01/23/2018", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/246665192/" },
     { "name": "Thiaguinho Bahia", "location": "Presidente Prudente", "joinedGroupOn": "12/11/2017", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/56593552/" },
     { "name": "Valter Rodrigues de Souza", "location": "Osvaldo Cruz", "joinedGroupOn": "12/12/2017", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/243772260/" },
-    { "name": "Valter VinÃ­cius", "location": "Vancouver, BC", "joinedGroupOn": "02/05/2018", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/207715632/" },
+    { "name": "Valter Vinícius", "location": "Vancouver, BC", "joinedGroupOn": "02/05/2018", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/207715632/" },
     { "name": "Valério", "location": "Presidente Prudente", "joinedGroupOn": "09/18/2017", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/199376911/" },
-    { "name": "Victor Damaceno", "location": "SÃ£o Paulo", "joinedGroupOn": "01/29/2018", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/220495561/" },
+    { "name": "Victor Damaceno", "location": "São Paulo", "joinedGroupOn": "01/29/2018", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/220495561/" },
     { "name": "Victor Santos", "location": "QuÃ©bec, QC", "joinedGroupOn": "12/25/2017", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/229346526/" },
     { "name": "Vinicius Teixeira", "location": "Presidente Prudente", "joinedGroupOn": "01/25/2018", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/246822607/" },
     { "name": "Vitor Scobin", "location": "Presidente Prudente", "joinedGroupOn": "12/14/2017", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/243900898/" },
@@ -537,9 +537,9 @@ export class AppComponent {
     { "name": "Walmir Carvalho", "location": "Presidente Prudente", "joinedGroupOn": "12/11/2017", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/243690034/" },
     { "name": "William Fernando", "location": "Presidente Prudente", "joinedGroupOn": "12/11/2017", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/243693499/" },
     { "name": "Yuri Rodrigues", "location": "Presidente Prudente", "joinedGroupOn": "08/14/2017", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/234060979/" },
-    { "name": "Érica Betto Sene", "location": "MartinÃ³polis", "joinedGroupOn": "12/11/2017", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/163588852/" },
+    { "name": "Érica Betto Sene", "location": "Martinópolis", "joinedGroupOn": "12/11/2017", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/163588852/" },
     { "name": "Ériton Oliveira Silva", "location": "Presidente Prudente", "joinedGroupOn": "02/14/2018", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/248224502/" },
-    { "name": "á–‡á•®á˜‰á—©á˜‰ á™–á‘Œá—©á–‡á–‡á—©á’Ž", "location": "Presidente Prudente", "joinedGroupOn": "01/26/2018", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/191323019/" },
+    { "name": "á–‡á•®á˜‰á—©á˜‰ á™–á‘Œá—©á–‡á–‡á—©á’Ž", "location": "Presidente Prudente", "joinedGroupOn": "01/26/2018", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/191323019/" }
   ];
 ```
 
@@ -596,6 +596,46 @@ Essa sintaxe com o atributo entre colchetes diz ao Angular que gostaríamos de v
 </p>
 
 ![Resultado Inicial do Carregamento dos Cards](/images/resultado-inicial-carregamento-cards.png "Resultado Ainda Parcial do Web App")
+
+<p>
+Claro que queremos exibir os conteúdos reais do nosso array de cartões de visita, e para isso precisamos passar o objeto do cartão para o componente do cartão também. Vamos melhorar o nosso componente de lista de cartões de visita:
+</p>
+
+```
+<app-card class="col-4" *ngFor="let card of cards" [card]="card"></app-card>
+```
+
+<p>
+E se olharmos no navegador agora vamos ver o erro no console JS: <code>Can't bind to 'card' since it isn't a known property of 'app-card'.</code> O Angular está nos dizendo que ainda precisamos definir nossa entrada no componente do cartão. Então podemos editar assim:
+</p>
+
+```
+import {Component, Input, OnInit} from '@angular/core';
+[...]
+export class CardComponent implements OnInit {
+  @Input() card:any;
+[...]
+```
+
+<p>E vamos adicionar as nossas propriedades do objeto membro do cartão ao modelo de componente do cartão:</p>
+
+```
+[...]
+  <div class="card-block">
+    <p class="card-text">Nome: {{card.name}}</p>
+    <p class="card-text">Localidade: {{card.location}}</p>
+    <p class="card-text">Data de Entrada: {{card.joinedGroupOn}}</p>
+    <p class="card-text"><a href="{{card.urlOfMemberProfile}}" target="_blank">Perfil no Meetup</a></p>
+  </div>
+[...]
+```
+
+<p>
+Vamos ver como funciona agora:
+</p>
+
+![Resultado com Listagem Dinâmica](/images/listagem-dinamica.png "Resultado da Listagem de Membros do Web App")
+
 
 
 
