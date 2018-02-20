@@ -853,4 +853,6 @@ export class FilterCardInputComponent implements OnInit {
 Então, se o evento <code>document:keypress</code> acontecer, verificamos se a tecla pressionada foi Enter e a nossa <code>filterCard.text</code> fica com algo. Depois disso, podemos chamar nosso método <code>filterCard</code>, em que emitimos o evento Angular <code>onCardFilter</code> com o texto de filtro do nosso cartão e restabelecemos o texto do campo de pesquisa para uma string vazia para que o usuário continue a adicionar novos filtros.
 </p>
 
+![Adicionado o filtro](/images/pesquisa-passo-1.png "Adicionado o filtro")
 
+![Resultado da Pesquisa](/images/pesquisa-passo-2.png "Após teclar enter! =]")
