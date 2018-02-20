@@ -255,3 +255,89 @@ ng generate component Card
   create src/app/card/card.component.ts (262 bytes)
   update src/app/app.module.ts (390 bytes)
 ```
+
+<p>Se olharmos para dentro de <code>src/app/card/card.component.ts</code>, podemos ver que eles são quase o mesmo código do nosso AppComponent, com uma pequena diferença:</p>
+
+```
+[...]
+@Component({
+  selector: 'app-card',
+[...]
+export class CardComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+}
+```
+
+<p>Gostaria de mencionar, neste ponto, que é considerado uma boa prática prefazer nossos seletores de componentes com um prefixo comum e, por padrão, é app-. Você pode alterá-lo para o prefixo de sua preferência editando a propriedade <code>prefix</code> em <code>.angular-cli.json</code>, então é preferível fazê-lo antes de usar <code>ng generate</code> pela primeira vez.</p>
+
+<p>
+Então temos um construtor para o nosso componente, bem como uma função <code>ngOnInit</code> para ele. Se você está curioso porque fizemos isso, você pode ler sobre isso na documentação do Angular. Mas em um nível básico pense nesses métodos como: um construtor está sendo chamado logo após a criação do componente, muito antes de os dados serem passados ​​para ele já estão prontos e preenchidos, enquanto <code>ngOnInit</code> apenas executa após o primeiro ciclo de mudanças no dados, então você tem acesso às suas entradas de componentes. Falaremos sobre entradas e comunicação de componentes em breve, mas por agora, vamos lembrar que é preferível usar o construtor para constantes, como coisas que estão realmente sendo codificadas em seu componente e <code>ngOnInit</code> para tudo o que depende de dados externos.
+</p>
+
+<p>
+Vamos preencher nossa implementação do CardComponent. Para começar, vamos apenas adicionar um novo template inicial a ela. O conteúdo padrão para o HTML é algo assim:
+</p>
+
+```
+<p>
+  card works!
+</p>
+```
+
+<p>Vamos substituí-lo pelo código para que ele se comporte como um cartão de visita de um membro do DevPP:</p>
+
+```
+<div class="card">
+  <div class="card-block">
+    <p class="card-text">Nome: Nome e Sobrenome</p>
+    <p class="card-text">Localidade: Cidade ou Estado</p>
+    <p class="card-text">Data de Entrada: Data de Entrada no Meetup</p>
+    <p class="card-text">Perfil no Meetup: URL do Site do Meetup</p>
+  </div>
+</div>
+```
+<p>
+Agora é um bom momento para exibir o componente do cartão, mas isso levanta outras questões: Quem será responsável por exibir os cartões? O AppComponent? Mas o AppComponent será carregado antes de qualquer outra coisa no aplicativo, então devemos considerá-lo organizado e pequeno. É melhor criar mais um componente para cuidar de armazenar uma lista de cartões e exibi-lo em nossa página.
+</p>
+
+<p>Como descrevemos as responsabilidades de nossos componentes, é claro que isso deveria ser um componente de lista de cartões de visita. Vamos pedir ao Angular CLI para gerá-lo para nós:</p>
+
+```
+ng generate component CardList
+  create src/app/card-list/card-list.component.scss (0 bytes)
+  create src/app/card-list/card-list.component.html (28 bytes)
+  create src/app/card-list/card-list.component.spec.ts (643 bytes)
+  create src/app/card-list/card-list.component.ts (281 bytes)
+  update src/app/app.module.ts (483 bytes)
+```
+
+<p>Antes de começar a implementá-lo, vejamos o que ignoramos depois de gerar o nosso primeiro componente. Angular CLI nos diz que ele atualizou <code>app.module.ts</code> para nós. É comum esquecermos isso, então vamos corrigi-lo:</p>
+
+```
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
+
+import { AppComponent } from './app.component';
+import { CardComponent } from './card/card.component';
+import { CardListComponent } from './card-list/card-list.component';
+
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    CardComponent,
+    CardListComponent,
+  ],
+  imports: [
+    BrowserModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+```
