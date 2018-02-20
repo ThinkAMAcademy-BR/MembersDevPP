@@ -76,3 +76,25 @@ Depois disso, podemos pedir ao nosso novo aplicativo que inicie somente com o co
 ![Aplicação sendo Exibida](/images/primeiro-ng-serve.PNG "Primeiro ng serve")
 
 O que está acontecendo? O Angular CLI executa o servidor de webpack dev, que sobe nosso aplicativo na próxima porta livre (para que você possa executar vários aplicativos na mesma máquina). Ele observa todas as mudanças no código fonte do projeto e recompila todas as mudanças. Então, usando Angular CLI, já estamos trabalhando em um ambiente de desenvolvimento sem escrever uma linha de configuração ou realmente fazer qualquer coisa que resolva um problema. Mas estamos começando...
+
+# Componentes
+<p>Temos o nosso aplicativo vazio em execução. Vamos falar sobre a composição do aplicativo em Angular. Se você tem alguma experiência em AngularJS, você sabe que havia controllers, diretivas e componentes, não se preocupe, hoje em dia é principalmente apenas componentes. O componente é o elemento básico do mundo angular. Vejamos o código que foi gerado pelo Angular CLI.</p>
+<br />
+<p>Primeiro, aqui está <code>index.html:</code></p>
+```` html
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MembersDevPp</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <app-root></app-root>
+</body>
+</html>
+````
+
