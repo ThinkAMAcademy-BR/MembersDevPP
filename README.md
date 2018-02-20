@@ -236,3 +236,22 @@ body {
   </div>
 </div>
 ```
+
+<p>E agora, se abrimos nosso navegador veremos o seguinte:</p>
+
+![Resultado após adicionar o Twitter Bootstrap](/images/adicionado-twitter-bootstrap.png "Testando Novo Estilo do Web App")
+
+<p>E é isso mesmo para o nosso boilerplate code, ou seja, é um trecho de código que pode ser reutilizado várias vezes sem nenhuma ou com poucas alteração em sua consistência. Vamos continuar a criar nossos próprios componentes.</p>
+
+# Nosso primeiro componente
+
+<p>Nós vamos exibir perfis como cartões em nossa tela, então comecemos por gerar nosso primeiro componente representando o próprio cartão. Para isso, vamos usar o Angular CLI executando o seguinte comando:</p>
+
+```
+ng generate component Card
+  create src/app/card/card.component.scss (0 bytes)
+  create src/app/card/card.component.html (23 bytes)
+  create src/app/card/card.component.spec.ts (614 bytes)
+  create src/app/card/card.component.ts (262 bytes)
+  update src/app/app.module.ts (390 bytes)
+```
