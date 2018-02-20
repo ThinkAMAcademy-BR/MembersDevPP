@@ -163,6 +163,11 @@ Vejamos o HTML desse componente:
   "component": {}
 }
 ```
+<p>Caso não tenha o <code>yarn</code> instalado, execute o seguinte comando:</p>
+
+```
+npm install -g yarn
+```
 
 <p>Nós também precisamos adicionar a biblioteca Sass ao nosso projeto e renomear <code>styles.css</code> para <code>styles.scss</code>. Então, para adicionar Sass, estou usando yarn:</p>
 
