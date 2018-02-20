@@ -74,3 +74,5 @@ Depois disso, podemos pedir ao nosso novo aplicativo que inicie somente com o co
 <p>Se acessarmos em nosso navegador o link http://localhost:4200/, a aplicação será exibida como ilustrado aqui:</p>
 
 ![Aplicação sendo Exibida](/images/primeiro-ng-serve.PNG "Primeiro ng serve")
+
+O que está acontecendo? O Angular CLI executa o servidor de webpack dev, que sobe nosso aplicativo na próxima porta livre (para que você possa executar vários aplicativos na mesma máquina). Ele observa todas as mudanças no código fonte do projeto e recompila todas as mudanças. Então, usando Angular CLI, já estamos trabalhando em um ambiente de desenvolvimento sem escrever uma linha de configuração ou realmente fazer qualquer coisa que resolva um problema. Mas estamos começando...
