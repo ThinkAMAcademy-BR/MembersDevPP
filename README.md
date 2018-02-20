@@ -81,7 +81,8 @@ O que está acontecendo? O Angular CLI executa o servidor de webpack dev, que so
 <p>Temos o nosso aplicativo vazio em execução. Vamos falar sobre a composição do aplicativo em Angular. Se você tem alguma experiência em AngularJS, você sabe que havia controllers, diretivas e componentes, não se preocupe, hoje em dia é principalmente apenas componentes. O componente é o elemento básico do mundo angular. Vejamos o código que foi gerado pelo Angular CLI.</p>
 <br />
 <p>Primeiro, aqui está <code>index.html:</code></p>
-```` html
+
+```
 <!doctype html>
 <html lang="en">
 <head>
@@ -96,5 +97,5 @@ O que está acontecendo? O Angular CLI executa o servidor de webpack dev, que so
   <app-root></app-root>
 </body>
 </html>
-````
+```
 
