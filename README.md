@@ -724,3 +724,133 @@ ng g component FilterCardInput
 <p>Vejamos o navegador.</p>
 
 ![Adicionado o Campo de Pesquisa](/images/campo-pesquisa.png "Campo de Pesquisa foi Adicionado")
+
+<p>O problema é que nosso novo componente não está fazendo nada. Vamos fazê-lo funcionar, agora vamos começar adicionando uma variável que irá receber o filtro informado pelo usuário:</p>
+
+```
+[...]
+export class FilterCardInputComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+  public filterCard: any = {text: ''};
+[...]
+```
+
+<p>Como filtramos? Se você já trabalhou com AngularJS antes, você pode conhecer o conceito de ligação bidirecional de dados. Ou você pode ter visto isso em todas as demonstrações extravagantes de AngularJS, onde você insere valor para entrar e atualiza o conteúdo da página para nós.</p>
+
+<p>
+Aqui está uma interessante introdução: a ligação bidirecional de dados não é mais conosco no Angular. Mas isso não significa que perdemos o acesso ao comportamento. Já vimos e usamos <code>[value]="expression"</code>, que liga a expressão à propriedade de valor do elemento de entrada. Mas também temos <code>(input)="expression"</code> uma maneira declarativa de vincular uma expressão ao evento de entrada do elemento de entrada. Juntos, eles podem ser usados ​​assim, por exemplo (não faz parte desse demo):
+</p>
+
+```
+<input [value]="newCard.text" (input)="newCard.text = $event.target.value">
+```
+
+<p>Assim, sempre que nosso newCard.textvalor muda, ele será passado para a entrada do nosso componente. E toda vez que o usuário insere dados em nossa entrada e as saídas do navegador input $event, nós atribuímos newCard.textao valor de entrada.</p>
+
+<p>Mais uma coisa antes de implementá-lo: Esta entrada parece um pouco demais, não é? Na verdade, Angular nos dá um pouco de perfumaria de sintaxe, o que podemos usar aqui, então comecei de um ângulo diferente para explicar como essa perfumaria funciona.</p>
+
+```
+<input placeholder="Pesquise..." class="form-control" [(ngModel)]="filterCard.text">
+```
+
+<p>
+Esta sintaxe, <code>[()]</code> chamada de bananas em uma caixa ou <code>ngModel</code>, é a diretiva Angular que cuida de obter valor de eventos e tudo isso. Então, podemos simplesmente escrever um código mais simples que leva nosso valor e o vincula ao valor da entrada e à nossa variável no código.
+</p>
+
+<p>
+Infelizmente, depois de acrescentarmos <code>ngModel</code>, estamos recebendo o <code>erro Can't bind to 'ngModel' since it isn't a known property of 'input'.</code>. Precisamos importar <code>ngModel</code> para o nosso AppModule. Mas de onde? Se verificar a documentação, podemos ver que está no módulo angular forms. Então precisamos editar o AppModule assim:
+</p>
+
+```
+[...]
+import {FormsModule} from "@angular/forms";
+
+@NgModule({
+[...]
+  imports: [
+    BrowserModule,
+    FormsModule
+  ],
+[...]
+```
+
+# Trabalhando com eventos nativos
+
+<p>
+Então, temos nossa variável preenchida, mas ainda precisamos enviar esse valor para a lista de cartões no AppComponent. Para comunicar dados ao componente angular, devemos ter entrada, ou seja, Input. Para que podemos comunicar dados fora do componente temos a saída, ou seja, Output, e nós a usamos da mesma forma que usamos a entrada, nós a importamos do Angular e usamos um decorator para defini-lo:
+</p>
+
+```
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+
+[...]
+export class FilterCardInputComponent implements OnInit {
+  @Output() onCardFilter = new EventEmitter<string>();
+
+  [...]
+}
+```
+
+<p>
+Mas há mais do que apenas resultados, também definimos algo chamado EventEmitter porque a saída do componente deve ser um evento, mas não devemos pensar sobre isso da mesma forma que fizemos esses velhos eventos de JavaScript. Então, precisamos subscrever os eventos, como fazemos isso? Vamos alterar o modelo do AppComponent:
+</p>
+
+```
+<app-filter-card-input (onCardFilter)="filterCard($event)"></app-filter-card-input>
+```
+
+<p>
+Também estamos vinculando uma expressão ao evento onCardFilter, tal como mencionamos no nosso FilterCardInputcomponente. Agora precisamos implementar o método <code>filterCard</code> no nosso AppComponent.
+</p>
+
+```
+[...]
+export class AppComponent {
+[...]
+
+  filterCard(cardText: string) {
+    this.cards = this.cards.filter(prop => prop.name.includes(cardText) || prop.location.includes(cardText) || prop.joinedGroupOn.includes(cardText));
+    console.log(this.cards);
+  }
+}
+```
+
+<p>
+Mas ainda não o estamos saindo de qualquer lugar. Vamos tentar fazer isso acontecer quando o usuário teclar o enter. Precisamos ouvir o evento de pressionamento de teclado DOM em nosso componente e exibir o evento angular desencadeado por isso. Para ouvir eventos DOM, Angular nos dá o HostListenerdecorador. É um decorador de funções que toma o nome de um evento nativo que queremos ouvir e a função que Angular quer chamar em resposta a ele. Vamos implementá-lo e discutir como funciona:
+</p>
+
+```
+import {Component, EventEmitter, OnInit, Output, HostListener} from '@angular/core';
+
+[...]
+export class FilterCardInputComponent implements OnInit {
+  @Output() onCardFilter = new EventEmitter<string>();
+
+  @HostListener('document:keypress', ['$event'])
+  handleKeyboardEvent(event: KeyboardEvent) {
+    if (event.code === "Enter" && this.filterCard.text.length > 0) {
+      this.filter(this.filterCard.text);
+     }
+  }  
+
+  [...]
+
+  filter(text) {
+    this.onCardFilter.emit(text);
+    this.filterCard.text = '';
+  }
+
+  [...]
+}
+```
+
+<p>
+Então, se o evento <code>document:keypress</code> acontecer, verificamos se a tecla pressionada foi Enter e a nossa <code>filterCard.text</code> fica com algo. Depois disso, podemos chamar nosso método <code>filterCard</code>, em que emitimos o evento Angular <code>onCardFilter</code> com o texto de filtro do nosso cartão e restabelecemos o texto do campo de pesquisa para uma string vazia para que o usuário continue a adicionar novos filtros.
+</p>
+
+

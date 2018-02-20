@@ -153,4 +153,9 @@ export class AppComponent {
     { "name": "Ériton Oliveira Silva", "location": "Presidente Prudente", "joinedGroupOn": "02/14/2018", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/248224502/" },
     { "name": "á–‡á•®á˜‰á—©á˜‰ á™–á‘Œá—©á–‡á–‡á—©á’Ž", "location": "Presidente Prudente", "joinedGroupOn": "01/26/2018", "urlOfMemberProfile": "https://www.meetup.com/dev-pp/members/191323019/" }
   ];
+
+  filterCard(cardText: string) {
+    this.cards = this.cards.filter(prop => prop.name.includes(cardText) || prop.location.includes(cardText) || prop.joinedGroupOn.includes(cardText));
+    console.log(this.cards);
+  }
 }
