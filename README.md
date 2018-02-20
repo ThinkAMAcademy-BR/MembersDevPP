@@ -674,5 +674,53 @@ Vamos ver como funciona agora:
 
 ![Adicionando mais Estilo ao Card](/images/estilo-card.png "Listagem com Estilo")
 
+# Comunicação de Componentes
 
+<p>Vamos adicionar um novo componente de busca de membro que nos permitirá filtrar os cards:</p>
 
+```
+ng g component FilterCardInput
+  create src/app/filter-card-input/filter-card-input.component.scss (0 bytes)
+  create src/app/filter-card-input/filter-card-input.component.html (36 bytes)
+  create src/app/filter-card-input/filter-card-input.component.spec.ts (693 bytes)
+  create src/app/filter-card-input/filter-card-input.component.ts (312 bytes)
+  update src/app/app.module.ts (605 bytes)
+```
+
+<p>E adicione isso no HTML gerado:</p>
+
+```
+<div class="card">
+  <div class="card-block">
+    <input placeholder="Pesquise..." class="form-control">
+  </div>
+</div>
+```
+
+<p>Em seguida, adicione isso ao decorador do componente:</p>
+
+```
+[...]
+@Component({
+  selector: 'app-filter-card-input',
+[...]
+  host: {'class': 'col-4'}
+})
+[...]
+```
+
+<p>E adicione nosso novo componente ao modelo AppComponent:</p>
+
+```
+[...]
+  <div class="container-fluid text-center pb-5">
+    <div class="row justify-content-end">
+      <app-filter-card-input></app-filter-card-input>
+    </div>
+  </div>
+  <app-card-list [cards]="cards"></app-card-list>
+```
+
+<p>Vejamos o navegador.</p>
+
+![Adicionado o Campo de Pesquisa](/images/campo-pesquisa.png "Campo de Pesquisa foi Adicionado")
