@@ -99,3 +99,20 @@ O que está acontecendo? O Angular CLI executa o servidor de webpack dev, que so
 </html>
 ```
 
+<p>Parece o tipo de marcação que você vê todos os dias. Mas há uma tag especial que é a app-root, Como o Angular faz isso funcionar, e como podemos saber o que está acontecendo dentro dele?</p>
+<br />
+<p>Vamos abrir o diretório<code>src/app</code> e ver o que há. Você pode ver o que o <code>ng new</code> gerou na pasta ou abri-lo no seu IDE preferido. Você verá que temos o <code>app.component.ts</code> lá (isso pode variar dependendo de quão recente sua versão do Angular é):</p>
+
+```
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  title = 'app';
+} 
+```
+
