@@ -53,4 +53,24 @@ Depois que a instalação for bem sucedida, podemos gerar um novo projeto execut
 <p><code>Installed packages for tooling via yarn.</code></p>
 <p><code>Successfully initialized git.</code></p>
 <p><code>Project 'members-dev-pp' successfully created.</code></p>
-<p><code>Project 'member-dev-pp' successfully created.</code></p>
+<p><code>Project 'members-dev-pp' successfully created.</code></p>
+
+Entre na pasta criada com o comando <code>cd members-dev-pp</code>
+
+Depois disso, podemos pedir ao nosso novo aplicativo que inicie somente com o comando <code>ng serve</code>:
+
+** NG Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **
+Date: 2018-02-20T00:44:34.860Z
+Hash: c7175b6d8044cd2f5efa
+Time: 18274ms
+chunk {inline} inline.bundle.js (inline) 3.85 kB [entry] [rendered]
+chunk {main} main.bundle.js (main) 17.9 kB [initial] [rendered]
+chunk {polyfills} polyfills.bundle.js (polyfills) 549 kB [initial] [rendered]
+chunk {styles} styles.bundle.js (styles) 41.5 kB [initial] [rendered]
+chunk {vendor} vendor.bundle.js (vendor) 7.42 MB [initial] [rendered]
+
+webpack: Compiled successfully.
+
+Se acessarmos em nosso navegador o link http://localhost:4200/, a aplicação será exibida como ilustrado aqui:
+
+![Aplicação sendo Exibida](https://lh4.googleusercontent.com/RO86CU8QqRyOnjC51nDo5lMH3OO5xHOphOmOMBBhEWp2MMitra69SQps4Of2JMP7Ivx2CLMYKtGLgw=w1212-h732-rw)
