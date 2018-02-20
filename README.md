@@ -187,7 +187,24 @@ yarn add node-sass@4.7.2 --dev
 ✨  Done in 5.78s.
 ```
 
-<p>Eu também quero usar o Twitter Bootstrap em nosso projeto, então vamos rodar <code>yarn add bootstrap@v4.0.0-beta.2</code> e editar o nosso <code>styles.scss</code> para incluir isso:</p>
+<p>Eu também quero usar o Twitter Bootstrap em nosso projeto, então vamos rodar <code>yarn add bootstrap@v4.0.0-beta.2</code> tendo algo assim como resultado em nosso terminal ou CMD:</p> 
+
+```
+yarn add bootstrap@v4.0.0-beta.2
+yarn add v1.3.2
+[1/4] 🔍  Resolving packages...
+[2/4] 🚚  Fetching packages...
+[3/4] 🔗  Linking dependencies...
+warning " > bootstrap@4.0.0-beta.2" has unmet peer dependency "jquery@1.9.1 - 3".
+warning " > bootstrap@4.0.0-beta.2" has unmet peer dependency "popper.js@^1.12.3".
+[4/4] 📃  Building fresh packages...
+success Saved lockfile.
+success Saved 1 new dependency.
+└─ bootstrap@4.0.0-beta.2
+✨  Done in 134.10s.
+```
+
+<p>E editar o nosso <code>styles.scss</code> para incluir isso:</p>
 
 ```
 /* You can add global styles to this file, and also import other style files */
