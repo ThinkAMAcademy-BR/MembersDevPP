@@ -545,7 +545,19 @@ export class AppComponent {
 ```
 
 <p>
-Nós temos nossa lista inicial, mas ainda assim, precisamos passá-la para o componente e renderizá-la para lá. Para isso, precisamos criar nossa primeira entrada. Vamos adicioná-lo ao nosso componente CardList:
+Retirei a seguinte DIV com a mensagem do <code>app.component.html</code> que estava utilizando a váriavel title que acabamos de retirar do nosso TypeScript:
+</p>
+
+```
+  <div style="text-align:center">
+    <h1>
+      Bem-vindo ao {{title}}!
+    </h1>
+  </div>
+```
+
+<p>
+Nós temos nossa lista inicial em <code>card-list.component</code>, mas ainda assim, precisamos passá-la para o componente e renderizá-la para lá. Para isso, precisamos criar nossa primeira entrada. Vamos adicioná-lo ao nosso componente CardList:
 </p>
 
 ```
@@ -561,7 +573,7 @@ Nós importamos o <code>Input</code> do Angular e usamos isso como decorator par
 </p>
 
 <p>
-Agora, temos nosso array de cartões em nossa CardList. Como podemos exibi-lo em vez de nosso HTML fixo atual? Vejamos o novo código em nosso componente da lista de cartões:
+Agora, temos nosso array de cartões em nossa CardList. Como podemos exibi-lo em vez de nosso HTML fixo atual? Vejamos o novo código HTML do arquivo <code>card-list.component.html</code> que é também parte do nosso componente da lista de cartões:
 </p>
 
 ```
@@ -569,14 +581,22 @@ Agora, temos nosso array de cartões em nossa CardList. Como podemos exibi-lo em
 ```
 
 <p>
-Isso é algo novo para nós, um nome de atributo que começa a partir de um asterisco. O que isso significa? É uma convenção padrão para nomear diretivas estruturais do angular. As diretivas estruturais controlam a estrutura do nosso modelo. O asterisco aqui é realmente "perfumaria", e você pode ler mais para entender como isso funciona. Mas para o nosso exemplo atual, basta entender o que acontecerá quando o adicionarmos ao nosso componente. Então o <code>ngFor</code> é uma diretiva de repetição e repetirá nosso cartão de visita para cada membro do DevPP no array de cartões. Se olharmos para o navegador ainda teremos uma página vazia.
+Isso é algo novo para nós, um nome de atributo que começa a partir de um asterisco. O que isso significa? É uma convenção padrão para nomear diretivas estruturais do angular. As diretivas estruturais controlam a estrutura do nosso modelo. O asterisco aqui é realmente "perfumaria de sintaxe", e você pode ler mais para entender como isso funciona. Mas para o nosso exemplo atual, basta entender o que acontecerá quando o adicionarmos ao nosso componente. Então o <code>ngFor</code> é uma diretiva de repetição e repetirá nosso cartão de visita para cada membro do DevPP no array de cartões. Se olharmos para o navegador ainda teremos uma página vazia.
 </p>
 
 <p>
-Definimos a nossa gama de cartões no nível do AppComponent, mas não o passamos para a entrada do CardList. Vamos editar o nosso modelo AppComponent para fazer isso:
+Definimos a nossa gama de cartões no nível do AppComponent, mas não o passamos para a entrada do CardList. Vamos editar o nosso HTML modelo do AppComponent em <code>app.component.html</code> para fazer isso:
 </p>
 
 ```
 <app-card-list [cards]="cards"></app-card-list>
 ```
+
+<p>
+Essa sintaxe com o atributo entre colchetes diz ao Angular que gostaríamos de vincular nossa variável <code>cards</code> do AppComponent à <code>[cards]</code> como entrada do CardListComponent. Assim que fizermos este código, obtemos isso:
+</p>
+
+![Resultado Inicial do Carregamento dos Cards](/images/resultado-inicial-carregamento.png "Resultado Ainda Parcial do Web App")
+
+
 

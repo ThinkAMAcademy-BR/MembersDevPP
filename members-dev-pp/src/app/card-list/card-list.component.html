@@ -1,7 +1,3 @@
 <div class="container-fluid text-center pb-5">
-  <div class="row">
-    <app-card class="col-4"></app-card>
-    <app-card class="col-4"></app-card>
-    <app-card class="col-4"></app-card>
-  </div>
+  <app-card class="col-4" *ngFor="let card of cards"></app-card>
 </div>
