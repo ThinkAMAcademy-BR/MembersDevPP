@@ -341,3 +341,53 @@ import { CardListComponent } from './card-list/card-list.component';
 })
 export class AppModule { }
 ```
+
+<p>Obviamente, <code>BrowserModule</code> e <code>NgModule</code> são módulos internos do Angular. Podemos ler mais sobre ambos na documentação. O AppComponent estava aqui antes de começar a gerar qualquer código, então nossos novos componentes realmente preencheram o módulo em dois lugares: Primeiro, eles são importados de seus arquivos de definição, e em seguida, eles estão incluídos na matriz de declarações do nosso NgModule decorator. Se você estiver criando um novo componente a partir do zero e esquecendo de adicionar um novo módulo ao NgModule, mas tentando adicionar no seu HTML, seu aplicativo não funcionará com o seguinte erro no console JS:</p>
+
+```
+Uncaught Error: Template parse errors:
+'app-card-list' is not a known element:
+1. If 'app-card-list' is an Angular component, then verify that it is part of this module.
+2. If 'app-card-list' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+```
+
+<p>Então, se o seu aplicativo não estiver funcionando, sem motivo aparente, não se esqueça de verificar o seu console.</p>
+
+<p>
+Vamos preencher a marcação de componente da lista de cartões ( <code>src/app/card-list/card-list.component.html</code>):
+</p>
+
+```
+<div class="container-fluid text-center pb-5">
+  <div class="row">
+    <app-card class="col-4"></app-card>
+    <app-card class="col-4"></app-card>
+    <app-card class="col-4"></app-card>
+  </div>
+</div>
+```
+
+<p>E adicionar o <code>app-card-list</code> no <code>card.component.html</code> dessa forma:</p>
+
+```
+<!-- Fixed navbar -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#">Membros do DevPP</a>
+</nav>
+<div class="container-fluid text-center pb-5">
+  <div style="text-align:center">
+    <h1>
+      Bem-vindo ao {{title}}!
+    </h1>
+  </div>
+  <app-card-list></app-card-list>
+</div>
+```
+
+<p>Se abrimos no nosso navegador veremos algo como isto:</p>
+
+![Listando os Cartões Fixos](/images/listando-cartoes-fixos.png "Resultado Parcial do Web App")
+
+
+
+
