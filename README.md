@@ -142,3 +142,11 @@ Vejamos o HTML desse componente:
   </li>
 </ul>
 ```
+
+<p>Assim, além de incorporar a Logo do Angular como um SVG, que é bastante legal, isso também parece uma marcação típica qualquer, porém temos uma coisa que é <code>( Welcome to {{ title }}!)</code>, se olharmos o nosso código de componente novamente, veremos <code>title = 'app';</code>. Então, se você já tem alguma prática em linguagens de modelo ou trabalhou com AngularJS, é bem óbvio o que está acontecendo aqui. Se você não sabe, isso é chamado de Angular Interpolation ou simplesmente Interpolação, pelo qual a expressão dentro das chaves duplas curly está sendo extraída de nosso componente (você pode pensar que o <code>{{ title }}</code> é como uma forma simplificada de <code> {{ this.title }}</code>) e exibido em nosso HTML.</p>
+<br />
+<p>Agora vimos todas as partes do nosso aplicativo angular gerado automaticamente que ocorrem na página exibida em nosso navegador. Vamos recapitular como ele realmente funciona: o Angular CLI executa o Webpack, que está compilando nosso aplicativo Angular em pacotes de JavaScript e injetando-os em nosso index.html. Se olharmos o código real em nosso navegador usando o recurso de inspeção, vemos algo como isto:</p>
+
+![HTML sendo Inspecionado](/images/inspecionar-html-app.png "Inpecionando o HTML do Web App")
+
+
