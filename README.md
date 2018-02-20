@@ -149,4 +149,35 @@ Vejamos o HTML desse componente:
 
 ![HTML sendo Inspecionado](/images/inspecionar-html-app.png "Inpecionando o HTML do Web App")
 
+<p>Toda vez que alteramos o nosso código, o Angular CLI irá recompilar, reintroduzir se necessário, e solicitar ao nosso navegador que recarregue a página se estiver aberta. Angular é bastante rápido, então na maioria dos casos enquanto você está mudando seu Windows do IDE para o navegador, ele já será recarregado para você.</p>
+<br />
+<p>Então vamos começar a avançar em direção ao nosso objetivo, e para começar vamos mudar nosso projeto do CSS para o Sass, e abrir nosso <code>.angular-cli.json</code> e editar <code>styles</code> e <code>styleExt</code> propriedades assim:</p>
 
+```javascript
+"styles": [
+  "styles.scss"
+],
+[...]
+"defaults": {
+  "styleExt": "scss",
+  "component": {}
+}
+```
+
+<p>Nós também precisamos adicionar a biblioteca Sass ao nosso projeto e renomear <code>styles.css</code> para <code>styles.scss</code>. Então, para adicionar Sass, estou usando yarn:</p>
+
+```
+yarn add sass 
+yarn add v1.3.2
+[1/4] 🔍  Resolving packages...
+[2/4] 🚚  Fetching packages...
+[3/4] 🔗  Linking dependencies...
+[...]
+[4/4] 📃  Building fresh packages...
+success Saved lockfile.
+success Saved 1 new dependency.
+└─ sass@1.0.0-beta.4
+✨  Done in 12.06s.
+yarn add node-sass@4.7.2 --dev
+✨  Done in 5.78s.
+```
