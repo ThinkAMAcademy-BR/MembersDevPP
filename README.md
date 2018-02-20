@@ -662,6 +662,17 @@ Vamos ver como funciona agora:
 
 ![Listagem dos Cards de Membros](/images/listagem-cards.png "Resultado da Listagem dos Cards de Membros do DevPP")
 
+<p>Parece bem melhor, mas o estilo está um pouco ruim ainda. Vamos consertar isso adicionando um novo estilo a <code>card.component.scss</code>:</p>
+
+```
+.card {
+    margin-top: 1.5rem;
+}
+```
+
+<p>E agora sim, como dizem os devs em PP, "ta massa":</p>
+
+![Adicionando mais Estilo ao Card](/images/estilo-card.png "Listagem com Estilo")
 
 
 
