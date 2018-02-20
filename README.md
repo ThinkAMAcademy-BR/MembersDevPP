@@ -200,7 +200,9 @@ body {
 
 <p>Precisamos editar <code>index.html</code> para tornar a nossa página responsiva vamos alterar o meta do nosso HTML para isso:</p>
 
-<code><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"></code>
+```
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+```
 
 <p>E agora podemos substituir <code>app.component.html</code> por isso:</p>
 
